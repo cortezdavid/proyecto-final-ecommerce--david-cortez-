@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nombre": "Remera violeta brillante",
+    "precio": 9999,
+    "imagen": "../img/bright-purple-t-shirt.jpg",
+    "stock": 23
+  },
+  {
+    "id": 2,
+    "nombre": "Remera azul cobalto",
+    "precio": 9999,
+    "imagen": "../img/cobalt-blue-t-shirt.jpg",
+    "stock": 14
+  },
+  {
+    "id": 3,
+    "nombre": "Remera verde",
+    "precio": 9999,
+    "imagen": "../img/green-t-shirt.jpg",
+    "stock" : 32
+  },
+  {
+    "id": 4,
+    "nombre": "Remera verde claro",
+    "precio": 9999,
+    "imagen": "../img/grey-t-shirt.jpg",
+    "stock": 12
+  },
+  {
+    "id": 5,
+    "nombre": "Remera gris",
+    "precio": 9999,
+    "imagen": "../img/light-green-t-shirt.jpg",
+    "stock": 27
+  },
+  {
+    "id": 6,
+    "nombre": "Remera morada",
+    "precio": 9999,
+    "imagen": "../img/purple-t-shirt.jpg",
+    "stock": 28
+  },
+  {
+    "id": 7,
+    "nombre": "Remera roja",
+    "precio": 9999,
+    "imagen": "../img/red-t-shirt.jpg",
+    "stock": 19
+  },
+  {
+    "id": 8,
+    "nombre": "Remera verde azulado",
+    "precio": 9999,
+    "imagen": "../img/teal-t-shirt.jpg",
+    "stock": 32
+  }
+]
