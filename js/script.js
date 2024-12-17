@@ -14,7 +14,16 @@ const showProducts = () => {
           <div class="details">
             <h3>${product.nombre}</h3>
             <p>$${product.precio}</p>
-            <button class="BtnAddToCart">Comprar</button>
+            <div class="productActions">
+              <div>
+                <button class="btnCount btnSubtract" id="btnSubtract">-</button>
+                <span id="quantity" class="quantity">${1}</span>
+                <button class="btnCount btnAdd" id="btnAdd">+</button>
+              </div>
+              <div>
+                <button class="BtnAddToCart">Comprar</button>
+              </div>
+            </div>
           </div>
         </article>`
       container.innerHTML += productHTML
@@ -36,7 +45,6 @@ const handlePurchase = () => {
           name: nombre,
           price: precio,
           img: imagen,
-          quantity: 1,
         }
         carrito.push(product)
         localStorage.setItem("carrito", JSON.stringify(carrito))
