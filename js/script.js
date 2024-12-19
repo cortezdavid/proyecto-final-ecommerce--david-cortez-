@@ -40,13 +40,19 @@ const handlePurchase = () => {
       getProducts().then(products => {
         const element = products.find(product => product.id == id)
         const { nombre, precio, imagen } = element
-        const product = {
-          id: id,
-          name: nombre,
-          price: precio,
-          img: imagen,
+        const productPosition = carrito.findIndex(product => product.id == id);
+        if (productPosition !== -1) {
+          carrito[productPosition].quantity += 1;
+        } else {
+          const product = {
+            id: id,
+            name: nombre,
+            price: precio,
+            img: imagen,
+            quantity: 1,
+          };
+          carrito.push(product);
         }
-        carrito.push(product)
         localStorage.setItem("carrito", JSON.stringify(carrito))
       })
     }

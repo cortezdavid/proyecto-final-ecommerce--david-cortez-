@@ -14,6 +14,7 @@ for (let i = 0; i < carrito.length; i++) {
           <div class="details">
             <h3>${producto.name}</h3>
             <p>$${producto.price}</p>
+            <p>cantidad: ${producto.quantity}</p>
           </div>
         </article>`
   listaCarrito.innerHTML += carritoProduct
