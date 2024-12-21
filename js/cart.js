@@ -31,8 +31,11 @@ listaCarrito.addEventListener("click", (e)=>{
   }
 })
 
-const vaciarCarrito = document.getElementById("btnRemoveAll")
-vaciarCarrito.addEventListener("click", () => {
+const btnRemoveAll = document.getElementById("btnRemoveAll")
+const btnCheckout = document.getElementById("btnCheckout")
+const deleteLocalStorage = () => {
   localStorage.removeItem("carrito")
   listaCarrito.innerHTML = "<h2>vacio</h2>"
-})
+}
+btnRemoveAll.addEventListener("click", deleteLocalStorage)
+btnCheckout.addEventListener("click", deleteLocalStorage)
