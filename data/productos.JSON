@@ -4,55 +4,159 @@
     "nombre": "Remera violeta brillante",
     "precio": 9999,
     "imagen": "../img/bright-purple-t-shirt.jpg",
-    "stock": 23
+    "stock": 23,
+    "detalles": "Remera de algodón suave con color violeta brillante. Perfecta para destacar en cualquier ocasión.",
+    "calificaciones": [
+      {
+        "id": 1,
+        "calificacion": "Me encanta el color, es exactamente como en la foto."
+      },
+      {
+        "id": 2,
+        "calificacion": "La tela es cómoda, pero después de un lavado perdió algo de color."
+      },
+      {
+        "id": 3,
+        "calificacion": "El diseño es bonito, pero llegó con una pequeña mancha."
+      }
+    ]
   },
   {
     "id": 2,
     "nombre": "Remera azul cobalto",
     "precio": 9999,
     "imagen": "../img/cobalt-blue-t-shirt.jpg",
-    "stock": 14
+    "stock": 14,
+    "detalles": "Color vibrante y duradero, ideal para el día a día con un diseño casual.",
+    "calificaciones": [
+      {
+        "id": 1,
+        "calificacion": "Es mi color favorito, la recomiendo mucho."
+      },
+      {
+        "id": 2,
+        "calificacion": "El material no parece muy duradero."
+      }
+    ]
   },
   {
     "id": 3,
     "nombre": "Remera verde",
     "precio": 9999,
     "imagen": "../img/green-t-shirt.jpg",
-    "stock" : 32
+    "stock": 32,
+    "detalles": "Remera clásica de color verde, ideal para combinar con cualquier look.",
+    "calificaciones": [
+      {
+        "id": 1,
+        "calificacion": "El color es un poco más oscuro que en la foto, pero sigue siendo bonita."
+      },
+      {
+        "id": 2,
+        "calificacion": "No es tan fresca como esperaba."
+      },
+      {
+        "id": 3,
+        "calificacion": "Perfecta para el día a día, muy práctica."
+      }
+    ]
   },
   {
     "id": 4,
     "nombre": "Remera verde claro",
     "precio": 9999,
     "imagen": "../img/grey-t-shirt.jpg",
-    "stock": 12
+    "stock": 12,
+    "detalles": "Un tono claro y relajante, perfecta para los días más cálidos.",
+    "calificaciones": [
+      {
+        "id": 1,
+        "calificacion": "La tela es excelente, pero el color es un poco más claro de lo que esperaba."
+      },
+      {
+        "id": 2,
+        "calificacion": "El ajuste no es perfecto, se siente algo grande."
+      }
+    ]
   },
   {
     "id": 5,
     "nombre": "Remera gris",
     "precio": 9999,
     "imagen": "../img/light-green-t-shirt.jpg",
-    "stock": 27
+    "stock": 27,
+    "detalles": "Diseño neutral en color gris, un básico para cualquier guardarropa.",
+    "calificaciones": [
+      {
+        "id": 1,
+        "calificacion": "Muy versátil, combina con todo."
+      },
+      {
+        "id": 2,
+        "calificacion": "La tela es demasiado fina, se ve algo transparente."
+      }
+    ]
   },
   {
     "id": 6,
     "nombre": "Remera morada",
     "precio": 9999,
     "imagen": "../img/purple-t-shirt.jpg",
-    "stock": 28
+    "stock": 28,
+    "detalles": "Estilo vibrante en un tono morado profundo. Ideal para destacar con estilo.",
+    "calificaciones": [
+      {
+        "id": 1,
+        "calificacion": "El color es hermoso y no pierde intensidad tras varios lavados."
+      },
+      {
+        "id": 2,
+        "calificacion": "Un poco costosa para la calidad que tiene."
+      }
+    ]
   },
   {
     "id": 7,
     "nombre": "Remera roja",
     "precio": 9999,
     "imagen": "../img/red-t-shirt.jpg",
-    "stock": 19
+    "stock": 19,
+    "detalles": "Remera clásica roja con un ajuste cómodo, ideal para el día a día.",
+    "calificaciones": [
+      {
+        "id": 1,
+        "calificacion": "Perfecta para usar con jeans."
+      },
+      {
+        "id": 2,
+        "calificacion": "La calidad es buena, pero llegó un poco arrugada."
+      },
+      {
+        "id": 3,
+        "calificacion": "Después de varios usos, el color empezó a desteñir."
+      }
+    ]
   },
   {
     "id": 8,
     "nombre": "Remera verde azulado",
     "precio": 9999,
     "imagen": "../img/teal-t-shirt.jpg",
-    "stock": 32
+    "stock": 32,
+    "detalles": "Tono único entre verde y azul que se adapta a cualquier ocasión.",
+    "calificaciones": [
+      {
+        "id": 1,
+        "calificacion": "No había visto este color antes, me encanta."
+      },
+      {
+        "id": 2,
+        "calificacion": "Muy cómoda, aunque el color es un poco diferente en persona."
+      },
+      {
+        "id": 3,
+        "calificacion": "El tejido parece delicado, espero que dure."
+      }
+    ]
   }
 ]

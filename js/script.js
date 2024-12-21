@@ -4,7 +4,6 @@ const getProducts = () => {
     .catch(error => console.log(error))
 }
 
-const showProducts = () => {
   getProducts().then(products => {
     products.forEach(product => {
       const container = document.querySelector('.containerProducts')
@@ -14,50 +13,9 @@ const showProducts = () => {
           <div class="details">
             <h3>${product.nombre}</h3>
             <p>$${product.precio}</p>
-            <div class="productActions">
-              <div>
-                <button class="btnCount btnSubtract" id="btnSubtract">-</button>
-                <span id="quantity" class="quantity">${1}</span>
-                <button class="btnCount btnAdd" id="btnAdd">+</button>
-              </div>
-              <div>
-                <button class="BtnAddToCart">Comprar</button>
-              </div>
-            </div>
+            <a href="http://127.0.0.1:5500/entrega/pages/details.html?id=${product.id}" class="BtnAddToCart">detalles</a>
           </div>
         </article>`
       container.innerHTML += productHTML
     });
   })
-}
-
-const carrito = JSON.parse(localStorage.getItem("carrito")) || []
-
-const handlePurchase = () => {
-  document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("BtnAddToCart")) {
-      const id = e.target.closest("article").dataset.id
-      getProducts().then(products => {
-        const element = products.find(product => product.id == id)
-        const { nombre, precio, imagen } = element
-        const productPosition = carrito.findIndex(product => product.id == id);
-        if (productPosition !== -1) {
-          carrito[productPosition].quantity += 1;
-        } else {
-          const product = {
-            id: id,
-            name: nombre,
-            price: precio,
-            img: imagen,
-            quantity: 1,
-          };
-          carrito.push(product);
-        }
-        localStorage.setItem("carrito", JSON.stringify(carrito))
-      })
-    }
-  })
-}
-
-showProducts()
-handlePurchase()

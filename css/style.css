@@ -148,17 +148,19 @@ textarea:focus-visible{
   width: 100%;
 }
 
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
 .details h3{
   font-weight: 300;
 }
 
 .details p{
   font-weight: 700;
-}
-
-.productActions{
-  display: flex;
-  justify-content: space-between;
 }
 
 .btnCount{
@@ -168,6 +170,12 @@ textarea:focus-visible{
 .productActions span{
   margin: 20px;
 }
+
+.BtnAddToCart{
+  background-color: #979268;
+  padding: 10px;
+}
+
 
 /* ---footer--- */
 footer{
