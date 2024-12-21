@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "Remera violeta brillante",
-    "precio": 9999,
+    "precio": 9.999,
     "imagen": "../img/bright-purple-t-shirt.jpg",
     "stock": 23,
     "detalles": "Remera de algodón suave con color violeta brillante. Perfecta para destacar en cualquier ocasión.",
@@ -24,7 +24,7 @@
   {
     "id": 2,
     "nombre": "Remera azul cobalto",
-    "precio": 9999,
+    "precio": 9.999,
     "imagen": "../img/cobalt-blue-t-shirt.jpg",
     "stock": 14,
     "detalles": "Color vibrante y duradero, ideal para el día a día con un diseño casual.",
@@ -42,7 +42,7 @@
   {
     "id": 3,
     "nombre": "Remera verde",
-    "precio": 9999,
+    "precio": 9.999,
     "imagen": "../img/green-t-shirt.jpg",
     "stock": 32,
     "detalles": "Remera clásica de color verde, ideal para combinar con cualquier look.",
@@ -64,7 +64,7 @@
   {
     "id": 4,
     "nombre": "Remera verde claro",
-    "precio": 9999,
+    "precio": 9.999,
     "imagen": "../img/grey-t-shirt.jpg",
     "stock": 12,
     "detalles": "Un tono claro y relajante, perfecta para los días más cálidos.",
@@ -82,7 +82,7 @@
   {
     "id": 5,
     "nombre": "Remera gris",
-    "precio": 9999,
+    "precio": 9.999,
     "imagen": "../img/light-green-t-shirt.jpg",
     "stock": 27,
     "detalles": "Diseño neutral en color gris, un básico para cualquier guardarropa.",
@@ -100,7 +100,7 @@
   {
     "id": 6,
     "nombre": "Remera morada",
-    "precio": 9999,
+    "precio": 9.999,
     "imagen": "../img/purple-t-shirt.jpg",
     "stock": 28,
     "detalles": "Estilo vibrante en un tono morado profundo. Ideal para destacar con estilo.",
@@ -118,7 +118,7 @@
   {
     "id": 7,
     "nombre": "Remera roja",
-    "precio": 9999,
+    "precio": 9.999,
     "imagen": "../img/red-t-shirt.jpg",
     "stock": 19,
     "detalles": "Remera clásica roja con un ajuste cómodo, ideal para el día a día.",
@@ -140,7 +140,7 @@
   {
     "id": 8,
     "nombre": "Remera verde azulado",
-    "precio": 9999,
+    "precio": 9.999,
     "imagen": "../img/teal-t-shirt.jpg",
     "stock": 32,
     "detalles": "Tono único entre verde y azul que se adapta a cualquier ocasión.",

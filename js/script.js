@@ -13,7 +13,7 @@ const getProducts = () => {
           <div class="details">
             <h3>${product.nombre}</h3>
             <p>$${product.precio}</p>
-            <a href="./details.html?id=${product.id}" class="BtnAddToCart">detalles</a>
+            <a href="./details.html?id=${product.id}" class="btnDetails">Detalles</a>
           </div>
         </article>`
       container.innerHTML += productHTML

@@ -171,9 +171,14 @@ textarea:focus-visible{
   margin: 20px;
 }
 
-.BtnAddToCart{
+.btnDetails{
   background-color: #979268;
   padding: 10px;
+}
+
+/* -----carrito----- */
+.containerCart{
+  display: flex;
 }
 
 
