@@ -12,7 +12,7 @@ const getProducts = () => {
           <img src="${product.imagen}" alt="${product.nombre}">
           <div class="details">
             <h3>${product.nombre}</h3>
-            <p>$${product.precio}</p>
+            <p>$${(product.precio).toFixed(3)}</p>
             <a href="./details.html?id=${product.id}" class="btnDetails">Detalles</a>
           </div>
         </article>`

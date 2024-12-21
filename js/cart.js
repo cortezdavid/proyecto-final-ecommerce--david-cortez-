@@ -13,7 +13,7 @@ for (let i = 0; i < carrito.length; i++) {
           <img src="${producto.img}" alt="${producto.name}">
           <div class="details">
             <h3>${producto.name}</h3>
-            <p>$${producto.price * producto.quantity}</p>
+            <p>$${(producto.price * producto.quantity).toFixed(3)}</p>
             <p>cantidad: ${producto.quantity}</p>
           </div>
           <button class="btnRemove">Borrar</button>
