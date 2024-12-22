@@ -142,10 +142,19 @@ textarea:focus-visible{
 
 .product{
   width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.product:hover{
+  transform: scale(1.01);
 }
 
 .product img{
   width: 100%;
+  border-radius: 5px;
 }
 
 .details{
