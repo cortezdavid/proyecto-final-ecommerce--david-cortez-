@@ -16,27 +16,27 @@ getProducts().then(products => {
   const element = products.find(product => product.id == idProduct)
   const container = document.querySelector('.container')
   const productHTML = `
-  <article class="product" data-id=${element.id}>
+  <h2 class="nameDetail">${element.nombre}</h2>
+  <article class="productDetail" data-id=${element.id}>
     <img src="${element.imagen}" alt="${element.nombre}">
-    <div class="details">
-      <h3>${element.nombre}</h3>
-      <p>$${(element.precio).toFixed(3)}</p>
+    <div>
+      <h3>$${(element.precio).toFixed(3)}</h3>
       <p>descripción: ${element.detalles}</p>
-      <div class="calificaciones">
-        <h4>Calificaciones:</h4>
-        <ul>
-          ${element.calificaciones.map(calificacion => `<li>${calificacion.calificacion}</li>`).join("")}
-        </ul>
-      </div>
       <div class="productActions">
         <p>cantidad:</p>
         <button class="btnCount btnSubtract" id="btnSubtract">-</button>
         <span id="quantity" class="quantity">1</span>
         <button class="btnCount btnAdd" id="btnAdd">+</button>
+        <button class="BtnAddToCart">Agregar al carrito</button>
       </div>
-      <button class="BtnAddToCart">Comprar</button>
     </div>
-  </article>`
+  </article>
+  <div class="calificaciones">
+    <h4>Calificaciones:</h4>
+    <ul>
+      ${element.calificaciones.map(calificacion => `<li>${calificacion.calificacion}</li>`).join("")}
+    </ul>
+  </div>`
   container.innerHTML += productHTML
 })
 
