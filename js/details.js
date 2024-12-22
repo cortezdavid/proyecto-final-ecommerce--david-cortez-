@@ -33,9 +33,19 @@ getProducts().then(products => {
   </article>
   <div class="calificaciones">
     <h4>Calificaciones:</h4>
-    <ul>
-      ${element.calificaciones.map(calificacion => `<li>${calificacion.calificacion}</li>`).join("")}
-    </ul>
+    <div class="reviews">
+      ${element.calificaciones.map(calificacion =>
+       `<div class="review">
+          <i class="fa-solid fa-circle-user"></i>
+          <div>
+            <strong>${calificacion.nombre}</strong>
+            <small>${calificacion.fecha}</small>
+            <p>${calificacion.calificacion}</p>
+            <span>${calificacion.estrellas}</span>
+          </div>
+        </div>
+        `).join("")}
+    </div>
   </div>`
   container.innerHTML += productHTML
 })

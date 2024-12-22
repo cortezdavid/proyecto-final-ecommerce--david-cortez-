@@ -200,6 +200,28 @@ textarea:focus-visible {
   width: 150px;
 }
 
+.reviews{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.review{
+  display: flex;
+  align-items: center;
+}
+
+.review i{
+  font-size: 50px;
+}
+
+.review small{
+  display: block;
+}
+
+.review strong{
+  font-size: 20px;
+}
 
 /* -----carrito----- */
 .containerCart {
@@ -281,6 +303,10 @@ footer i {
 
   .productDetail {
     flex-direction: row;
+  }
+
+  .reviews {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .contactSection {
