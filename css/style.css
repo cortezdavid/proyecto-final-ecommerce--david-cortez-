@@ -36,8 +36,28 @@ button {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
   background-color: #a98aae;
+}
+
+.navbar .navLink{
+  color: #fbfbef;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.navbar .navLink:hover{
+  border-bottom: 2px solid #fbfbef;
+}
+
+.navbar .navLink.active{
+  font-weight: 900;
+  border-bottom: 2px solid #fbfbef;
+}
+
+.logo img{
+  width: 70px;
 }
 
 main {
@@ -51,7 +71,7 @@ main {
 }
 
 .sectionOne {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 96.22px);
   background-image: url("../img/fondo.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -259,8 +279,13 @@ footer {
   background-color: #a98aae;
 }
 
+.footerContent, .footerContent a{
+  color: #fbfbef;
+}
+
 .footerInformation {
   margin-bottom: 10px;
+  font-weight: 100;
 }
 
 footer i {
@@ -282,8 +307,8 @@ footer i {
     display: flex;
   }
 
-  .navbar li {
-    margin: 0 5px;
+  .navItem{
+    margin: auto;
   }
 
   .nameDetail{
@@ -324,6 +349,10 @@ footer i {
 
   .home p {
     font-size: 20px;
+  }
+
+  .navItem{
+    margin: 0 10px;
   }
 
   .productDetail {
