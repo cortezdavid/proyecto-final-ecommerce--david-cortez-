@@ -21,7 +21,7 @@ getProducts().then(products => {
     <img src="${element.imagen}" alt="${element.nombre}">
     <div>
       <h3>$${(element.precio).toFixed(3)}</h3>
-      <p>descripción: ${element.detalles}</p>
+      <p>${element.detalles}</p>
       <div class="productActions">
         <p>cantidad:</p>
         <button class="btnCount btnSubtract" id="btnSubtract">-</button>
@@ -29,6 +29,8 @@ getProducts().then(products => {
         <button class="btnCount btnAdd" id="btnAdd">+</button>
         <button class="BtnAddToCart">Agregar al carrito</button>
       </div>
+      <a href="./products.html" class=""><button>Volver</button>
+</a>
     </div>
   </article>
   <div class="calificaciones">
@@ -39,7 +41,6 @@ getProducts().then(products => {
           <i class="fa-solid fa-circle-user"></i>
           <div>
             <strong>${calificacion.nombre}</strong>
-            <small>${calificacion.fecha}</small>
             <p>${calificacion.calificacion}</p>
             <span>${calificacion.estrellas}</span>
           </div>
