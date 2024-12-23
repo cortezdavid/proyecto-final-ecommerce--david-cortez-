@@ -29,11 +29,10 @@ getProducts().then(products => {
         <button class="btnCount btnAdd" id="btnAdd">+</button>
         <button class="BtnAddToCart">Agregar al carrito</button>
       </div>
-      <a href="./products.html" class=""><button>Volver</button>
-</a>
+      <a href="./products.html" class=""><button>Volver</button></a>
     </div>
   </article>
-  <div class="calificaciones">
+  <div class="containerReviews">
     <h4>Calificaciones:</h4>
     <div class="reviews">
       ${element.calificaciones.map(calificacion =>
