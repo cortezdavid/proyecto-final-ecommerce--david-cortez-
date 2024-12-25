@@ -1,6 +1,8 @@
 const carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
 const listaCarrito = document.getElementById("carrito")
+const actionCart = document.getElementById("actionCart")
+const total = carrito.reduce((acc, product) => acc + product.price * product.quantity, 0)
 
 if (carrito.length == 0) {
   listaCarrito.innerHTML = `
@@ -15,7 +17,7 @@ if (carrito.length == 0) {
     const carritoProduct = `
          <article class="product" data-id=${producto.id}>
             <img src="${producto.img}" alt="${producto.name}">
-            <div class="details">
+            <div class="">
               <h3>${producto.name}</h3>
               <p>$${(producto.price * producto.quantity).toFixed(3)}</p>
               <p>cantidad: ${producto.quantity}</p>
@@ -24,8 +26,12 @@ if (carrito.length == 0) {
           </article>`
     listaCarrito.innerHTML += carritoProduct
   }
-  listaCarrito.innerHTML += `<button id="btnRemoveAll">Vaciar carrito</button>
-                           <button id="btnCheckout">Comprar</button>`
+  actionCart.innerHTML += `
+  <div class="actionCart">
+    <p>Total: $${total.toFixed(3)}</p>
+    <button id="btnRemoveAll">Vaciar carrito</button>
+    <button id="btnCheckout">Comprar</button>
+  </div>`
 }
 
 listaCarrito.addEventListener("click", (e) => {

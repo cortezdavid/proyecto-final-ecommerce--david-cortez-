@@ -170,7 +170,6 @@ textarea:focus-visible {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
-  cursor: pointer;
 }
 
 .product:hover {
@@ -283,8 +282,16 @@ textarea:focus-visible {
   font-size: 40px;
 }
 
+.containerProducstCart {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
 .containerCart {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* ---footer--- */
@@ -352,6 +359,20 @@ footer i {
 
 @media (min-width: 768px) {
 
+  
+  .containerProducstCart {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .containerCart {
+    flex: 7; 
+  }
+
+  .actionCart {
+    flex: 3;
+  }
+
   .home {
     width: 60%;
   }
@@ -408,6 +429,14 @@ footer i {
 
   .container {
     max-width: 1220px;
+  }
+
+  .containerCart {
+    flex: 3;
+  }
+
+  .actionCart {
+    flex: 1; 
   }
 
   footer {

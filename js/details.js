@@ -20,8 +20,8 @@ getProducts().then(products => {
   <article class="productDetail" data-id=${element.id}>
     <img src="${element.imagen}" alt="${element.nombre}">
     <div>
+    <p>${element.detalles}</p>
       <h3>$${(element.precio).toFixed(3)}</h3>
-      <p>${element.detalles}</p>
       <div class="productActions">
         <p>cantidad:</p>
         <button class="btnCount btnSubtract" id="btnSubtract">-</button>
