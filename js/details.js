@@ -28,7 +28,7 @@ getProducts().then(products => {
           <span id="quantity" class="quantity">1</span>
           <button class="btnCount btnAdd" id="btnAdd">+</button>
         </div>
-        <button class="BtnAddToCart">Agregar al carrito</button>
+        <button class="BtnAddToCart" id="btnAddToCart">Agregar al carrito</button>
       </div>
       <a href="./products.html" class="back"><button>Volver</button></a>
     </div>
@@ -37,7 +37,7 @@ getProducts().then(products => {
     <h4>Calificaciones:</h4>
     <div class="reviews">
       ${element.calificaciones.map(calificacion =>
-       `<div class="review">
+    `<div class="review">
           <i class="fa-solid fa-circle-user"></i>
           <div>
             <strong>${calificacion.nombre}</strong>
@@ -49,6 +49,18 @@ getProducts().then(products => {
     </div>
   </div>`
   container.innerHTML += productHTML
+})
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 1000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer);
+    toast.addEventListener('mouseleave', Swal.resumeTimer);
+  }
 })
 
 document.addEventListener("click", (e) => {
@@ -72,12 +84,15 @@ document.addEventListener("click", (e) => {
       }
       localStorage.setItem("carrito", JSON.stringify(carrito))
     })
+    Toast.fire({
+      icon: "success",
+      title: "Producto agregado al carrito"
+    })
   }
 })
 
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("btnAdd")) {
-   
     const quantitySpan = e.target.previousElementSibling
     quantitySpan.textContent = parseInt(quantitySpan.textContent) + 1;
   }

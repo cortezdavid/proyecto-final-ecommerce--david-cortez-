@@ -28,7 +28,7 @@ if (carrito.length == 0) {
   }
   let nameProducts = ""
   for (let i = 0; i < carrito.length; i++) {
-    nameProducts += `<p>${carrito[i].name}</p>`; 
+    nameProducts += `<p>${carrito[i].name}</p>`;
   }
   actionCart.innerHTML += `
   <div class="buy">
@@ -55,6 +55,7 @@ listaCarrito.addEventListener("click", (e) => {
 
 const btnRemoveAll = document.getElementById("btnRemoveAll")
 const btnCheckout = document.getElementById("btnCheckout")
+
 const deleteLocalStorage = () => {
   localStorage.removeItem("carrito")
   listaCarrito.innerHTML = `
@@ -71,3 +72,11 @@ if (btnRemoveAll) {
 if (btnCheckout) {
   btnCheckout.addEventListener("click", deleteLocalStorage);
 }
+
+btnCheckout.addEventListener("click", () => {
+  Swal.fire({
+    title: '¡Compra exitosa!',
+    icon: 'success',
+    confirmButtonText: 'Aceptar'
+  })
+})
