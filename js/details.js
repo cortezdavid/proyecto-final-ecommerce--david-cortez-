@@ -30,7 +30,9 @@ getProducts().then(products => {
         </div>
         <button class="BtnAddToCart" id="btnAddToCart">Agregar al carrito</button>
       </div>
-      <a href="./products.html" class="back"><button>Volver</button></a>
+      <div class="back">
+        <a href="./products.html"><button>Volver</button></a>
+      </div>
     </div>
   </article>
   <div class="containerReviews">
