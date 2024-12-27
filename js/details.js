@@ -19,17 +19,18 @@ getProducts().then(products => {
   <h2 class="nameDetail">${element.nombre}</h2>
   <article class="productDetail" data-id=${element.id}>
     <img src="${element.imagen}" alt="${element.nombre}">
-    <div>
+    <div class="productInformation">
     <p>${element.detalles}</p>
       <h3>$${(element.precio).toFixed(3)}</h3>
       <div class="productActions">
-        <p>cantidad:</p>
-        <button class="btnCount btnSubtract" id="btnSubtract">-</button>
-        <span id="quantity" class="quantity">1</span>
-        <button class="btnCount btnAdd" id="btnAdd">+</button>
+        <div class="btnsQuantity">
+          <button class="btnCount btnSubtract" id="btnSubtract">-</button>
+          <span id="quantity" class="quantity">1</span>
+          <button class="btnCount btnAdd" id="btnAdd">+</button>
+        </div>
         <button class="BtnAddToCart">Agregar al carrito</button>
       </div>
-      <a href="./products.html" class=""><button>Volver</button></a>
+      <a href="./products.html" class="back"><button>Volver</button></a>
     </div>
   </article>
   <div class="containerReviews">

@@ -196,24 +196,12 @@ textarea:focus-visible {
   font-weight: 700;
 }
 
-.btnCount {
-  width: 40px;
-}
-
-.productActions span {
-  margin: 20px;
-}
-
 .btnDetails {
   background-color: #979268;
   padding: 10px;
 }
 
 /* ----detalles--- */
-
-.containerDetails{
-  margin: 30px auto;
-}
 
 .nameDetail{
   font-size: 24px;
@@ -222,14 +210,44 @@ textarea:focus-visible {
 .productDetail {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .productDetail img{
   border-radius: 10px;
 }
 
+.productActions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productActions span {
+  margin: 20px;
+}
+
+.productInformation{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productInformation p{
+  font-size: 20px;
+}
+
+.btnCount {
+  width: 35px;
+}
+
 .BtnAddToCart{
   width: 150px;
+}
+
+.back{
+  margin-top: auto;
 }
 
 .containerReviews{
