@@ -9,13 +9,13 @@ if (carrito.length == 0) {
   <div class="empty">
     <i class="fa-solid fa-circle-exclamation"></i>
     <p>Vacio</p>
-  </div>
-  `
+  </div>`
+  actionCart.remove()
 } else {
   for (let i = 0; i < carrito.length; i++) {
     const producto = carrito[i]
     const carritoProduct = `
-         <article class="product" data-id=${producto.id}>
+         <article class="productCart" data-id=${producto.id}>
             <img src="${producto.img}" alt="${producto.name}">
             <div class="">
               <h3>${producto.name}</h3>
@@ -26,11 +26,20 @@ if (carrito.length == 0) {
           </article>`
     listaCarrito.innerHTML += carritoProduct
   }
+  let nameProducts = ""
+  for (let i = 0; i < carrito.length; i++) {
+    nameProducts += `<p>${carrito[i].name}</p>`; 
+  }
   actionCart.innerHTML += `
-  <div class="actionCart">
-    <p>Total: $${total.toFixed(3)}</p>
-    <button id="btnRemoveAll">Vaciar carrito</button>
-    <button id="btnCheckout">Comprar</button>
+  <div class="buy">
+    <div>
+      ${nameProducts}
+    </div>
+    <h3>Total: $${total.toFixed(3)}</h3>
+    <div class="buttonsCart">
+      <button id="btnRemoveAll">Vaciar carrito</button>
+      <button id="btnCheckout">Comprar</button>
+    </div>
   </div>`
 }
 
@@ -52,8 +61,8 @@ const deleteLocalStorage = () => {
   <div class="empty">
     <i class="fa-solid fa-circle-exclamation"></i>
     <p>Vacio</p>
-  </div>
-  `
+  </div>`
+  actionCart.remove()
 }
 
 if (btnRemoveAll) {
